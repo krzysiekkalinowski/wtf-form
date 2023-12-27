@@ -1,0 +1,10 @@
+.form-quantity {
+    display: flex;
+    gap: 20px;
+}
+
+#comment {
+    height: 300px;
+    width: 100%;
+    resize: none;
+}

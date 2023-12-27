@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularz WTF</title>
+    <link href="normalize.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <main class="main">
+      <header class="page-header">
+        <h1 class="page-header__heading">Formularz WTF</h1>
+      </header>
+      <section class="form-section">
+        <form class="form" action="https://forms.cotenfrontend.pl" method="post">
+          <p>
+            <label for="firstName">Imię</label>
+            <input
+              id="firstName"
+              type="text"
+              name="firstName"
+              placeholder="Twoje imię"
+              required
+            />
+          </p>
+          <p>
+            <label for="secondName">Nazwisko</label>
+            <input
+              id="secondName"
+              type="text"
+              name="secondName"
+              placeholder="Twoje nazwisko"
+              required
+            />
+          </p>
+          <p>
+            <label for="phone">Numer telefonu</label>
+            <input
+              id="phone"
+              type="tel"
+              name="phone"
+              placeholder="Twój numer telefonu"
+              required
+            />
+          </p>
+          <p>
+            <label for="email">Email</label>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="Twój email"
+              required
+            />
+          </p>
+          <div class="form-quantity">
+          <p>
+            <label for="quantity">Ilość</label>
+            <input
+              id="quantity"
+              type="range"
+              min="1"
+              max="20"
+              step="1"
+              name="quantity"
+              required
+            />
+          </p>
+          <p class="form-quantity__quantity-holder form-quantity__quantity-holder--js">
+          </div>
+          </p>
+          <fieldset>
+            <legend>Dane adresowe</legend>
+            <p>
+              <label for="street">Ulica</label>
+              <input
+                id="street"
+                type="text"
+                name="street"
+                placeholder="Twoja ulica"
+                required
+              />
+            </p>
+            <p>
+              <label for="place">Nr domu</label>
+              <input
+                id="place"
+                type="number"
+                name="place"
+                placeholder="Numer Twojego domu/bloku"
+                required
+              />
+            </p>
+            <p>
+              <label for="apartament">Nr mieszkania</label>
+              <input
+                id="apartament"
+                type="number"
+                name="apartament"
+                placeholder="Numer Twojego mieszkania"
+              />
+            </p>
+            <p>
+              <label for="city">Miasto</label>
+              <input
+                id="city"
+                type="text"
+                name="city"
+                placeholder="Miasto"
+                required
+              />
+            </p>
+            <p>
+              <label for="postalCode">Kod pocztowy</label>
+              <input
+                id="postalCode"
+                type="text"
+                name="postalCode"
+                placeholder="Twój kod pocztowy"
+                pattern="\d{2}-\d{3}"
+                title="Kod pocztowy powinien być w formacie XX-XXX, gdzie X to cyfra."
+                required
+              />
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend>Czy jesteś pełnoletni/pełnoletnia?</legend>
+            <p>
+              <label for="ageVerificationAdult">Jestem pełnoletni/pełnoletnia</label>
+              <input
+                id="ageVerificationAdult"
+                type="radio"
+                name="ageVerification"
+                value="adult"
+                required
+              />
+            </p>
+            <p>
+              <label for="ageVerificationUnderage">Nie jestem pełnoletni/pełnoletnia</label>
+              <input
+                id="ageVerificationUnderage"
+                type="radio"
+                name="ageVerification"
+                value="underage"
+              />
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend>Opcje dodatkowe</legend>
+            <p>
+              <label for="additionalInfoPackage">Ozdobne opakowanie</label>
+              <input
+                id="additionalInfoPackage"
+                type="checkbox"
+                name="additionalInfo"
+                value="package"
+              />
+            </p>
+            <p>
+              <label for="additionalInfoInscription">Dedykacja</label>
+              <input
+                id="additionalInfoInscription"
+                type="checkbox"
+                name="additionalInfo"
+                value="insciption"
+              />
+            </p>
+            <p>
+              <label for="color">Kolor opakowania</label>
+              <select id="color" name="color">
+                <option value="blue">Niebieskie</option>
+                <option value="red">Czerwone</option>
+                <option value="white">Białe</option>
+              </select>
+            </p>
+          </fieldset>
+          <p>
+            <label for="comment">Komentarz</label>
+            <input
+              id="comment"
+              type="textarea"
+              name="comment"
+            />
+          </p>
+          <p>
+            <label for="avatar">Avatar</label>
+            <input
+              id="avatar"
+              type="file"
+              name="avatar"
+            />
+          </p>
+          <p>
+            <input type="submit" value="Wyślij" />
+          </p>
+        </form>
+      </section>
+    </main>
+    <script src="/main.js"></script>
+  </body>
+</html>
