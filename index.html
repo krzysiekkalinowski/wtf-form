@@ -14,7 +14,8 @@
       </header>
       <section class="form-section">
         <form class="form" action="https://forms.cotenfrontend.pl" method="post">
-          <p>
+          <div class="form-columns">
+          <p class="form-element">
             <label for="firstName">Imię</label>
             <input
               id="firstName"
@@ -24,9 +25,9 @@
               required
             />
           </p>
-          <p>
+          <p class="form-element">
             <label for="secondName">Nazwisko</label>
-            <input
+            <input class="input"
               id="secondName"
               type="text"
               name="secondName"
@@ -34,9 +35,9 @@
               required
             />
           </p>
-          <p>
+          <p class="form-element">
             <label for="phone">Numer telefonu</label>
-            <input
+            <input class="input"
               id="phone"
               type="tel"
               name="phone"
@@ -44,9 +45,9 @@
               required
             />
           </p>
-          <p>
+          <p class="form-element">
             <label for="email">Email</label>
-            <input
+            <input class="input"
               id="email"
               type="email"
               name="email"
@@ -55,9 +56,9 @@
             />
           </p>
           <div class="form-quantity">
-          <p>
+          <p class="form-element">
             <label for="quantity">Ilość</label>
-            <input
+            <input class="input"
               id="quantity"
               type="range"
               min="1"
@@ -67,14 +68,14 @@
               required
             />
           </p>
-          <p class="form-quantity__quantity-holder form-quantity__quantity-holder--js">
+          <p class="form-element form-quantity__quantity-holder form-quantity__quantity-holder--js">
           </div>
           </p>
           <fieldset>
             <legend>Dane adresowe</legend>
-            <p>
+            <p class="form-element">
               <label for="street">Ulica</label>
-              <input
+              <input class="input"
                 id="street"
                 type="text"
                 name="street"
@@ -82,9 +83,9 @@
                 required
               />
             </p>
-            <p>
+            <p class="form-element">
               <label for="place">Nr domu</label>
-              <input
+              <input class="input"
                 id="place"
                 type="number"
                 name="place"
@@ -92,18 +93,18 @@
                 required
               />
             </p>
-            <p>
+            <p class="form-element">
               <label for="apartament">Nr mieszkania</label>
-              <input
+              <input class="input"
                 id="apartament"
                 type="number"
                 name="apartament"
                 placeholder="Numer Twojego mieszkania"
               />
             </p>
-            <p>
+            <p class="form-element">
               <label for="city">Miasto</label>
-              <input
+              <input class="input"
                 id="city"
                 type="text"
                 name="city"
@@ -111,9 +112,9 @@
                 required
               />
             </p>
-            <p>
+            <p class="form-element">
               <label for="postalCode">Kod pocztowy</label>
-              <input
+              <input class="input"
                 id="postalCode"
                 type="text"
                 name="postalCode"
@@ -126,7 +127,7 @@
           </fieldset>
           <fieldset>
             <legend>Czy jesteś pełnoletni/pełnoletnia?</legend>
-            <p>
+            <p class="form-element">
               <label for="ageVerificationAdult">Jestem pełnoletni/pełnoletnia</label>
               <input
                 id="ageVerificationAdult"
@@ -136,7 +137,7 @@
                 required
               />
             </p>
-            <p>
+            <p class="form-element">
               <label for="ageVerificationUnderage">Nie jestem pełnoletni/pełnoletnia</label>
               <input
                 id="ageVerificationUnderage"
@@ -148,7 +149,7 @@
           </fieldset>
           <fieldset>
             <legend>Opcje dodatkowe</legend>
-            <p>
+            <p class="form-element">
               <label for="additionalInfoPackage">Ozdobne opakowanie</label>
               <input
                 id="additionalInfoPackage"
@@ -157,7 +158,7 @@
                 value="package"
               />
             </p>
-            <p>
+            <p class="form-element">
               <label for="additionalInfoInscription">Dedykacja</label>
               <input
                 id="additionalInfoInscription"
@@ -166,7 +167,7 @@
                 value="insciption"
               />
             </p>
-            <p>
+            <p class="form-element">
               <label for="color">Kolor opakowania</label>
               <select id="color" name="color">
                 <option value="blue">Niebieskie</option>
@@ -175,7 +176,8 @@
               </select>
             </p>
           </fieldset>
-          <p>
+        </div>
+          <p class="form-element">
             <label for="comment">Komentarz</label>
             <input
               id="comment"
@@ -183,7 +185,7 @@
               name="comment"
             />
           </p>
-          <p>
+          <p class="form-element">
             <label for="avatar">Avatar</label>
             <input
               id="avatar"
@@ -191,7 +193,7 @@
               name="avatar"
             />
           </p>
-          <p>
+          <p class="form-element">
             <input type="submit" value="Wyślij" />
           </p>
         </form>
